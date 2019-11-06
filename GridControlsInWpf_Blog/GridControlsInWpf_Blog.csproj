@@ -55,15 +55,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DataGridUC.xaml">
+    <Compile Include="DataGrids\DataGrid1.xaml.cs">
+      <DependentUpon>DataGrid1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridControls.cs" />
+    <Compile Include="GridViews\GridView1.xaml.cs">
+      <DependentUpon>GridView1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridViews\GridView2.xaml.cs">
+      <DependentUpon>GridView2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source.cs" />
+    <Page Include="DataGrids\DataGrid1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GridViewUC.xaml">
+    <Page Include="GridViews\GridView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListViewUC.xaml">
+    <Page Include="GridViews\GridView2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,15 +85,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DataGridUC.xaml.cs">
-      <DependentUpon>DataGridUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GridViewUC.xaml.cs">
-      <DependentUpon>GridViewUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ListViewUC.xaml.cs">
-      <DependentUpon>ListViewUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -114,6 +116,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sunamo\desktop\desktop.csproj">
+      <Project>{772cacc2-80f3-4948-a443-3043195836e2}</Project>
+      <Name>desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\shared\shared.csproj">
+      <Project>{77719c0d-7c8b-4b9e-a644-aee7ceb35134}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\sunamo\sunamo.csproj">
+      <Project>{f6f92307-b0b3-4d6c-bd9c-8b5ff5560dcf}</Project>
+      <Name>sunamo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

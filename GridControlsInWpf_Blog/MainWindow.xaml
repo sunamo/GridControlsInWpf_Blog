@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:GridControlsInWpf_Blog"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+
+    <!--<Window.Resources>
        
+                <DataTemplate x:Key="OrangeHeaderTemplate">
+                    <DockPanel>
+                        <CheckBox />
+                        <TextBlock FontSize="10" Foreground="Orange" FontWeight="Bold">
+                            <TextBlock.Text>
+                                <Binding />
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </DockPanel>
+                </DataTemplate>
+
+    </Window.Resources>-->
+    
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+        <ComboBox x:Name="cb"></ComboBox>
+            <Button Content="List checked" x:Name="btnListChecked" Click="btnListChecked_Click"></Button>
+            <Button Content="Indexes checked" x:Name="btnIndexesChecked" Click="btnIndexesChecked_Click"></Button>
+        </StackPanel>
     </Grid>
 </Window>

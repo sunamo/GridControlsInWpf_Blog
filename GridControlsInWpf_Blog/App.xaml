@@ -4,6 +4,22 @@
              xmlns:local="clr-namespace:GridControlsInWpf_Blog"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!--DataTemplate must be inserted directly to *.Resources-->
+        
+        <DataTemplate x:Key="OrangeHeaderTemplate">
+            <DockPanel>
+                <CheckBox />
+                <TextBlock FontSize="10" Foreground="Orange" FontWeight="Bold">
+                    <TextBlock.Text>
+                        <Binding />
+                    </TextBlock.Text>
+                </TextBlock>
+            </DockPanel>
+        </DataTemplate>
+
+        <!--<ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>-->
     </Application.Resources>
 </Application>
