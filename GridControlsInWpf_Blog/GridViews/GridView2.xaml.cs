@@ -21,19 +21,36 @@ namespace GridControlsInWpf_Blog.GridViews
     /// </summary>
     public partial class GridView2 : UserControl
     {
+        ListViewColumnHelper<Author> listViewColumnHelper = null;
+
         public GridView2()
         {
             InitializeComponent();
+
+            listViewColumnHelper = new ListViewColumnHelper<Author>(lstViewXamlColumns);
+
+
             var list = Source.ItemsSource();
+            Source.SortReceiptsByDateBorn();
             lstViewXamlColumns.ItemsSource = list;
             ((INotifyCollectionChanged)list).CollectionChanged += GridView1_CollectionChanged;
         }
 
         public event Action CollectionChanged;
+        
+        int ByDateTimeDesc(Author x, Author y)
+        {
+            return SunamoComparer.DT.Instance.Desc(x.DateBorn, y.DateBorn);
+        }
 
         private void GridView1_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             CollectionChanged();
+        }
+
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
+            listViewColumnHelper.CheckBox_Click(sender, e);
         }
     }
 

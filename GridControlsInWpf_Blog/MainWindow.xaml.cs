@@ -37,7 +37,7 @@ namespace GridControlsInWpf_Blog
             gc.AddValuesOfEnumAsItems<GridControls>();
             cb.SelectionChanged += Cb_SelectionChanged;
 
-            
+            Source.SortReceiptsByDateBorn();
 
             SetContent(GridControls.GridView2);
         }
@@ -75,6 +75,7 @@ namespace GridControlsInWpf_Blog
                     {
                         gridView2 = new GridView2();
                         gridView2.CollectionChanged += GridView1_CollectionChanged;
+                        
                     }
                     c = gridView2;
                     break;
@@ -98,9 +99,14 @@ namespace GridControlsInWpf_Blog
             grid.Children.Add(c);
         }
 
+
+
+       
+        
+
         private void GridView1_CollectionChanged()
         {
-            Title = SH.Join(",", Source.list.Select(a => a.Mvp));
+            Title = SH.Join(",", Source.list.Select(a => a.IsChecked));
         }
 
         private void btnListChecked_Click(object sender, RoutedEventArgs e)
@@ -110,7 +116,7 @@ namespace GridControlsInWpf_Blog
 
         private void btnIndexesChecked_Click(object sender, RoutedEventArgs e)
         {
-            Title = SH.Join(",", Source.list.Where(r => r.Mvp).Select(a => a.Id));
+            Title = SH.Join(",", Source.list.Where(r => r.IsChecked).Select(a => a.Id));
         }
     }
 }
