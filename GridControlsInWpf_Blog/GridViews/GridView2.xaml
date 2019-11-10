@@ -7,13 +7,33 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <ListView x:Name="lstViewXamlColumns">
+        <ListView.Resources>
+            <ContextMenu x:Key="ItemContextMenu">
+                <MenuItem x:Name="menuItem_CopyUsername"
+                  Click="menuItem_CopyUsername_Click"
+                  Header="Copy Username">
+                    <!--<MenuItem.Icon>
+                        <Image Source="/mypgm;component/Images/Copy.png" />
+                    </MenuItem.Icon>-->
+                </MenuItem>
+            </ContextMenu>
+        </ListView.Resources>
+        
+        <ListView.ItemContainerStyle>
+            <Style TargetType="{x:Type ListViewItem}">
+                <Setter Property="ContextMenu" Value="{StaticResource ItemContextMenu}" />
+            </Style>
+        </ListView.ItemContainerStyle>
+        
         <ListView.View>
             <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Authors" ColumnHeaderTemplate="{StaticResource OrangeHeaderTemplate}">
                 
+                
+                
                 <GridView.ColumnHeaderContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="Ascending" />
-                        <MenuItem Header="Descending" />
+                        <MenuItem Header="Ascending" x:Name="miAscending" Click="miAscending_Click" />
+                        <MenuItem Header="Descending" x:Name="miDescending" Click="miDescending_Click" />
                     </ContextMenu>
                 </GridView.ColumnHeaderContextMenu>
                 <!--<GridViewColumn Header="MVP" Width="50" DisplayMemberBinding="{Binding Path=Mvp}" />-->

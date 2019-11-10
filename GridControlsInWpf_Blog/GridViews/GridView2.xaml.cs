@@ -29,7 +29,6 @@ namespace GridControlsInWpf_Blog.GridViews
 
             listViewColumnHelper = new ListViewColumnHelper<Author>(lstViewXamlColumns);
 
-
             var list = Source.ItemsSource();
             Source.SortReceiptsByDateBorn();
             lstViewXamlColumns.ItemsSource = list;
@@ -51,6 +50,39 @@ namespace GridControlsInWpf_Blog.GridViews
         private void CheckBox_Click(object sender, RoutedEventArgs e)
         {
             listViewColumnHelper.CheckBox_Click(sender, e);
+        }
+
+        private void miDescending_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miAscending_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miAddToPlaylist_Click(object sender, RoutedEventArgs e)
+        {
+            var item = sender as ListViewItem;
+            var context = item.DataContext as Author;
+
+            MessageBox.Show("Added to playlist " + context.Name);
+        }
+
+        private void ListViewItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void menuItem_CopyUsername_Click(object sender, RoutedEventArgs e)
+        {
+            MenuItem menuItem = (MenuItem)e.Source;
+            ContextMenu contextMenu = menuItem.Parent as ContextMenu; //.CommandParameter as ContextMenu;
+            ListViewItem item = (ListViewItem)contextMenu.PlacementTarget;
+            var context = item.DataContext as Author;
+
+            MessageBox.Show("Added to playlist " + context.Name);
         }
     }
 
