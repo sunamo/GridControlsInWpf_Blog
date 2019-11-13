@@ -27,9 +27,7 @@
         
         <ListView.View>
             <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Authors" ColumnHeaderTemplate="{StaticResource OrangeHeaderTemplate}">
-                
-                
-                
+
                 <GridView.ColumnHeaderContextMenu>
                     <ContextMenu>
                         <MenuItem Header="Ascending" x:Name="miAscending" Click="miAscending_Click" />
