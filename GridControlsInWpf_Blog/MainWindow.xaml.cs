@@ -89,7 +89,7 @@ namespace GridControlsInWpf_Blog
                     c = dataGrid1;
                     break;
                 default:
-                    ThrowExceptions.NotImplementedCase(type, RH.CallingMethod());
+                    ThrowExceptions.NotImplementedCase(type, RH.CallingMethod(), gridControl);
                     break;
             }
 

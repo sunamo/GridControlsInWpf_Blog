@@ -49,7 +49,7 @@ namespace GridControlsInWpf_Blog.GridViews
 
         private void CheckBox_Click(object sender, RoutedEventArgs e)
         {
-            listViewColumnHelper.CheckBox_Click(sender, e);
+            listViewColumnHelper.CheckBox_Click(sender, e, Checkboxes.IsChecked);
         }
 
         private void miDescending_Click(object sender, RoutedEventArgs e)
