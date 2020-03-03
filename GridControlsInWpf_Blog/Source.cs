@@ -100,4 +100,3 @@ public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
         }
     }
 }
-
