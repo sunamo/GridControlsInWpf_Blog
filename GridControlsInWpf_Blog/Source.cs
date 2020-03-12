@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-
 public class Source
 {
+static Type type = typeof(Source);
     public static AutoIndexedObservableCollection<Author> list = new AutoIndexedObservableCollection<Author>();
-
     static Source()
     {
         DateTime dt = new DateTime(2019, 1, 1);
@@ -22,26 +21,20 @@ public class Source
         list.Add(new Author(true, "Renee Ward", DTHelperGeneral.AddDays(ref dt, 1), "Coding Standards"));
         list.Add(new Author(false, "Praveen Kumar", DTHelperGeneral.AddDays(ref dt, 1), "Vista Development"));
     }
-
     public static void SortReceiptsByDateBorn()
     {
         // ToList() here must be - sorted still contains reference to original collection
         var sorted = list.OrderBy(d => d.DateBorn).Reverse().ToList();
-
         list.Clear();
         list.AddRange(sorted);
     }
-
     public static AutoIndexedObservableCollection<Author> ItemsSource()
     {
         return list;
     }
 }
-
 public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
 {
-
-
     public Author(bool authorMVP, string authorName, DateTime dateBorn, string authorBook)
     {
         this.Name = authorName;
@@ -49,7 +42,6 @@ public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
         this.Book = authorBook;
         this.IsChecked = authorMVP;
     }
-
     private bool isChecked;
     public bool IsChecked
     {
@@ -60,38 +52,29 @@ public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
             OnPropertyChanged("IsChecked");
         }
     }
-
     public int Id { get; set; }
-
     private string name;
-
     public string Name
     {
         get { return name; }
         set { name = value; }
     }
     private DateTime dateBorn;
-
     public DateTime DateBorn
     {
         get { return dateBorn; }
         set { dateBorn = value; }
     }
     private string book;
-
     public string Book
     {
         get { return book; }
         set { book = value; }
     }
-
-    public bool IsSelected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public Visibility Visibility { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+    public bool IsSelected { get => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); set => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); }
+    public Visibility Visibility { get => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); set => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); }
     public  event PropertyChangedEventHandler PropertyChanged;
-
     
-
     private void OnPropertyChanged(string propertyName)
     {
         if (PropertyChanged != null)
