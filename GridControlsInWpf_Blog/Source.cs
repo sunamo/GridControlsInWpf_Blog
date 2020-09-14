@@ -35,6 +35,8 @@ static Type type = typeof(Source);
 }
 public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
 {
+    public static Type type = typeof(Author);
+
     public Author(bool authorMVP, string authorName, DateTime dateBorn, string authorBook)
     {
         this.Name = authorName;
@@ -71,8 +73,16 @@ public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
         get { return book; }
         set { book = value; }
     }
-    public bool IsSelected { get => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); set => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); }
-    public Visibility Visibility { get => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); set => ThrowExceptions.Custom(Exc.GetStackTrace(), type, Exc.CallingMethod(),NotImplementedException(); }
+    public bool IsSelected
+    {
+        get
+        {
+            //ThrowExceptions.NotImplementedMethod(Exc.GetStackTrace(), type, Exc.CallingMethod());
+            return false;
+        }
+        set {  }
+    }
+    public Visibility Visibility { get { return Visibility.Visible; } set {  } }
     public  event PropertyChangedEventHandler PropertyChanged;
     
     private void OnPropertyChanged(string propertyName)
