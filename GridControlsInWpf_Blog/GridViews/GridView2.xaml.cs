@@ -77,7 +77,7 @@ namespace GridControlsInWpf_Blog.GridViews
 
         private void menuItem_CopyUsername_Click(object sender, RoutedEventArgs e)
         {
-            MenuItem menuItem = (MenuItem)e.Source;
+            SuMenuItem menuItem = (SuMenuItem)e.Source;
             ContextMenu contextMenu = menuItem.Parent as ContextMenu; //.CommandParameter as ContextMenu;
             ListViewItem item = (ListViewItem)contextMenu.PlacementTarget;
             var context = item.DataContext as Author;
