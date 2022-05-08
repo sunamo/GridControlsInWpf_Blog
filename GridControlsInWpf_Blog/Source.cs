@@ -77,7 +77,7 @@ public class Author : INotifyPropertyChanged, IIdentificatorDesktop<int>
     {
         get
         {
-            //ThrowExceptions.NotImplementedMethod(Exc.GetStackTrace(), type, Exc.CallingMethod());
+            //ThrowEx.NotImplementedMethod();
             return false;
         }
         set {  }
