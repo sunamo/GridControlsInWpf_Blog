@@ -1,4 +1,4 @@
-﻿using GridControlsInWpf_Blog.DataGrids;
+using GridControlsInWpf_Blog.DataGrids;
 using GridControlsInWpf_Blog.GridViews;
 using System;
 using System.Collections.Generic;
@@ -24,10 +24,26 @@ namespace GridControlsInWpf_Blog
     {
         static Type type = typeof(MainWindow);
         ComboBoxHelper<GridControls> gc = null;
-        UserControl last = new UserControl();
-        GridView1 gridView1 = null;
-        GridView2 gridView2 = null;
-        DataGrid1 dataGrid1 = null;
+
+/// <summary>
+/// SetContent
+/// </summary>
+UserControl last = new UserControl();
+
+/// <summary>
+/// SetContent
+/// </summary>
+GridView1 gridView1 = null;
+
+/// <summary>
+/// SetContent
+/// </summary>
+GridView2 gridView2 = null;
+
+/// <summary>
+/// SetContent
+/// </summary>
+DataGrid1 dataGrid1 = null;
 
         public MainWindow()
         {
