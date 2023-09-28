@@ -22,7 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "duo", "..\..\sunamo\duo\duo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMail", "..\..\sunamo\SunamoMail\SunamoMail.csproj", "{24D7D2FA-D9EF-47E2-A78C-86772D25D6AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "win", "..\..\sunamo\win\win.csproj", "{6DCCE286-D460-4C0A-8DA6-A02D01BE5276}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "win", "..\..\sunamo\win.win\win.win.csproj", "{6DCCE286-D460-4C0A-8DA6-A02D01BE5276}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoExceptions", "..\..\sunamoWithoutDep\SunamoExceptions\SunamoExceptions.csproj", "{9BBC6B09-0A8F-4373-BB69-42CCC77512FA}"
 EndProject
