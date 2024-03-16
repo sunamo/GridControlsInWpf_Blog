@@ -43,7 +43,7 @@ DataGrid1 dataGrid1 = null;
 
         private void Author_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            
+
         }
 
         private void Cb_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -74,7 +74,7 @@ DataGrid1 dataGrid1 = null;
                     {
                         gridView2 = new GridView2();
                         gridView2.CollectionChanged += GridView1_CollectionChanged;
-                        
+
                     }
                     c = gridView2;
                     break;
@@ -100,12 +100,12 @@ DataGrid1 dataGrid1 = null;
 
 
 
-       
-        
+
+
 
         private void GridView1_CollectionChanged()
         {
-            Title = SH.Join(",", Source.list.Select(a => a.IsChecked));
+            Title = string.Join(",", Source.list.Select(a => a.IsChecked));
         }
 
         private void btnListChecked_Click(object sender, RoutedEventArgs e)
@@ -115,7 +115,7 @@ DataGrid1 dataGrid1 = null;
 
         private void btnIndexesChecked_Click(object sender, RoutedEventArgs e)
         {
-            Title = SH.Join(",", Source.list.Where(r => r.IsChecked).Select(a => a.Id));
+            Title = string.Join(",", Source.list.Where(r => r.IsChecked).Select(a => a.Id));
         }
     }
 }

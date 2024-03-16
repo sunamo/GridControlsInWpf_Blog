@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridControlsInWpf_Blog", "GridControlsInWpf_Blog\GridControlsInWpf_Blog.csproj", "{DC70B139-ECC5-42FE-B288-633CAC8DA3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\..\sunamo\sunamo\sunamo.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\..\sunamo\SunamoShared\SunamoShared.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "..\..\sunamo\shared\shared.csproj", "{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}"
 EndProject
