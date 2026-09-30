@@ -10,3 +10,7 @@ generated_time: 14:00:41
 ## Description
 
 Projekt v .NET (C#), chybí README ani description v konfiguračním souboru. Popis je odhadnutý jen z počtu a typu souborů, doporučujeme ruční upřesnění.
+
+## Původ zdrojáků
+
+Staženo z GitHubu: **ne** — podle remote a metadat repa nejde o zdrojáky stažené z GitHubu.
