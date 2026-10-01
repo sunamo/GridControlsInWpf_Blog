@@ -1,5 +1,9 @@
 # GridControlsInWpf_Blog
 
+## Short description
+
+Malá WPF ukázka (dva projekty) ke starému blogovému příspěvku o mřížkových ovládacích prvcích. Porovnává tři způsoby zobrazení tabulky: dynamicky vytvořený GridView, GridView v XAML a DataGrid. Druhý projekt ukazuje dynamické střídání panelů v okně. Cílí na net9.0-windows a spoléhá na sdílené balíčky Sunamo.
+
 Ukázková WPF aplikace k blogovému příspěvku o mřížkových ovládacích prvcích.
 
 ## Obsah
