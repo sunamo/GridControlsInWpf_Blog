@@ -1,5 +1,9 @@
 # GridControlsInWpf_Blog
 
+## Short description
+
+Prázdné WPF řešení připravené pro článek o ovládacích prvcích mřížky ve WPF. Obsahuje uživatelské ovládací prvky `DataGridUC`, `GridViewUC` a `ListViewUC` jen jako kostry bez obsahu a hlavní okno s prázdnou mřížkou. Nic dalšího v projektu nebylo naimplementováno.
+
 Prázdné WPF řešení připravené pro článek o ovládacích prvcích mřížky ve WPF. Obsahuje uživatelské ovládací prvky `DataGridUC`, `GridViewUC` a `ListViewUC` jen jako kostry bez obsahu a hlavní okno s prázdnou mřížkou. Nic dalšího v projektu nebylo naimplementováno.
 
 ## Technologie
