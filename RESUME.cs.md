@@ -35,4 +35,4 @@ Doporučení přesunu do sunamocz-legacy.visualstudio.com: **40 %** — malý uk
 ## Vazby na moje repa
 
 - Submoduly: žádné
-- ProjectReference / PackageReference: žádné
+- ProjectReference / PackageReference: `SunamoShared` (PackageReference), `desktop` (ProjectReference, cíl chybí), `Xlf` (ProjectReference, cíl chybí)
