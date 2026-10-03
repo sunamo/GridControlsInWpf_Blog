@@ -1,5 +1,5 @@
 ---
-schema_version: 9
+schema_version: 10
 type: learning
 file_count: 20
 avg_lines_per_file: 2351
@@ -8,15 +8,15 @@ metrics_lm: 2026-10-01 16:41:20
 move_to_legacy_percent: 90
 description_updated: 2026-10-01
 links_updated: 2026-10-01
-github_source_url:
+github_source_url: not found
 origin_status: found
 origin_checked: 2026-10-01
-article_source_url:
+article_source_url: not found
 article_status: none
 article_checked: 2026-10-03
 last_build_ok: no
 last_build_date: 2026-10-02
-last_tests_run_date: n/a
+last_tests_run_date: not run
 covered_lines: 0
 ---
 
