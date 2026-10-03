@@ -1,17 +1,23 @@
 ---
-schema_version: 7
+schema_version: 9
 type: learning
 file_count: 20
 avg_lines_per_file: 2351
+total_lines: 405
+metrics_lm: 2026-10-01 16:41:20
 move_to_legacy_percent: 90
-generated_date: 2026-10-01
-generated_time: 16:41:20
-github_source_url: 
+description_updated: 2026-10-01
+links_updated: 2026-10-01
+github_source_url:
+origin_status: found
+origin_checked: n/a
+article_source_url:
+article_status: none
+article_checked: 2026-10-03
 last_build_ok: no
 last_build_date: 2026-10-02
 last_tests_run_date: n/a
 covered_lines: 0
-total_lines: 405
 ---
 
 ## Description
@@ -23,6 +29,8 @@ Prázdné WPF řešení připravené pro článek o ovládacích prvcích mří�
 Staženo z GitHubu: **ne** — zdrojáky jsou vlastní práce autora nebo standardní šablona.
 
 - Ověřeno: remote Azure DevOps (radekjancik), dva commity (init Radek Jančík 2019 a přidání .gitignore), kód jsou prázdné šablonové kostry bez cizích souborů, žádný upstream.
+
+Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
 
 ## Doporučení přesunu do legacy
 
