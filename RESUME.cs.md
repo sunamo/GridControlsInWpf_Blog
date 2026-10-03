@@ -1,17 +1,23 @@
 ---
-schema_version: 7
+schema_version: 9
 type: learning
 file_count: 37
 avg_lines_per_file: 35
+total_lines: 894
+metrics_lm: 2026-10-01 16:41:09
 move_to_legacy_percent: 40
-generated_date: 2026-10-01
-generated_time: 16:41:09
-github_source_url: 
+description_updated: 2026-10-01
+links_updated: 2026-10-01
+github_source_url:
+origin_status: found
+origin_checked: n/a
+article_source_url:
+article_status: none
+article_checked: 2026-10-03
 last_build_ok: no
 last_build_date: 2026-10-02
 last_tests_run_date: n/a
 covered_lines: 0
-total_lines: 894
 ---
 
 ## Description
@@ -24,6 +30,8 @@ Staženo z GitHubu: **ne** — ukázkový kód a vlastní autor, žádná vazba 
 
 - Ověřeno: remote je vlastní sunamo/GridControlsInWpf_Blog, historie od 2019 s jediným autorem (Radek Jančík), gh search "GridControlsInWpf_Blog DynamicPanelControlsInWpf" a "GridControlsInWpf" našly jen vlastní repo, ukázková data ve Source.cs jsou jen textové řetězce.
 
+Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
+
 ## Doporučení přesunu do legacy
 
 Doporučení přesunu do sunamocz-legacy.visualstudio.com: **40 %** — malý ukázkový projekt z roku 2019 bez produkčního užití.
@@ -35,4 +43,4 @@ Doporučení přesunu do sunamocz-legacy.visualstudio.com: **40 %** — malý uk
 ## Vazby na moje repa
 
 - Submoduly: žádné
-- ProjectReference / PackageReference: žádné
+- ProjectReference / PackageReference: `SunamoShared` (PackageReference), `desktop` (ProjectReference, cíl chybí), `Xlf` (ProjectReference, cíl chybí)

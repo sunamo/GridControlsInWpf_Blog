@@ -22,5 +22,5 @@ Ukázková WPF aplikace k blogovému příspěvku o mřížkových ovládacích 
 
 ## Sestavení
 
-- Otevři `GridControlsInWpf_Blog.sln` ve Visual Studiu a spusť projekt `GridControlsInWpf_Blog`.
+- Otevři `GridControlsInWpf_Blog.slnx` ve Visual Studiu a spusť projekt `GridControlsInWpf_Blog`.
 - Relativní `ProjectReference` na `PlatformIndependentNuGetPackages` musí na disku existovat.
