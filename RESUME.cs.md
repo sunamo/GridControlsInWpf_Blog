@@ -10,7 +10,7 @@ description_updated: 2026-10-01
 links_updated: 2026-10-01
 github_source_url:
 origin_status: found
-origin_checked: n/a
+origin_checked: 2026-10-01
 article_source_url:
 article_status: none
 article_checked: 2026-10-03
