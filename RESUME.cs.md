@@ -1,6 +1,6 @@
 ---
 schema_version: 10
-type: DeleteAfterAllIsFullyBuildable
+type: learning
 file_count: 20
 avg_lines_per_file: 2351
 total_lines: 405
