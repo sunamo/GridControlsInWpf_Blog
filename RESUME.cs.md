@@ -35,6 +35,8 @@ Staženo z GitHubu: **ne** — ukázkový kód a vlastní autor, žádná vazba 
 
 Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
 
+Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
+
 ## Doporučení přesunu do legacy
 
 Doporučení přesunu do sunamocz-legacy.visualstudio.com: **40 %** — malý ukázkový projekt z roku 2019 bez produkčního užití.
