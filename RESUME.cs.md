@@ -1,22 +1,25 @@
 ---
-schema_version: 9
+schema_version: 11
 type: learning
+category_override: none
 file_count: 37
+file_extensions: cs:17, xaml:9, csproj:2, jsonanddelete:2, md:2, resx:2, settings:2, noext:1, slnx:1
+file_extensions_updated: 2026-10-04
 avg_lines_per_file: 35
 total_lines: 894
 metrics_lm: 2026-10-01 16:41:09
 move_to_legacy_percent: 40
 description_updated: 2026-10-01
 links_updated: 2026-10-01
-github_source_url:
+github_source_url: not found
 origin_status: found
-origin_checked: n/a
-article_source_url:
+origin_checked: 2026-10-01
+article_source_url: not found
 article_status: none
 article_checked: 2026-10-03
 last_build_ok: no
 last_build_date: 2026-10-02
-last_tests_run_date: n/a
+last_tests_run_date: not run
 covered_lines: 0
 ---
 
@@ -29,6 +32,8 @@ Malá WPF ukázka (dva projekty) ke starému blogovému příspěvku o mřížko
 Staženo z GitHubu: **ne** — ukázkový kód a vlastní autor, žádná vazba na cizí GitHub repo.
 
 - Ověřeno: remote je vlastní sunamo/GridControlsInWpf_Blog, historie od 2019 s jediným autorem (Radek Jančík), gh search "GridControlsInWpf_Blog DynamicPanelControlsInWpf" a "GridControlsInWpf" našly jen vlastní repo, ukázková data ve Source.cs jsou jen textové řetězce.
+
+Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
 
 Článek, ze kterého by kód byl opsaný, se nenašel (zjišťovalo se v souborech repa a podle názvu).
 
